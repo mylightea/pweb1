@@ -1,0 +1,12 @@
+body {
+    background-color: #e0e0e0;
+    font-family: 'Verdana', sans-serif;
+}
+h1 {
+    color: #074f8a;
+    text-align: center;
+}
+p {
+    color: #d60b0b;
+    margin: 20px;
+}

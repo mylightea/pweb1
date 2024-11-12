@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px; /* Added space below the heading */
+}
+
+.box {
+  padding: 20px;
+  margin-bottom: 15px; 
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center; /* Center text inside boxes */
+}
+
+.box1 {
+  position: static;
+  background-color: lightgreen;
+}
+
+.box2 {
+  position: relative;
+  top: 20px;
+  background-color: lightblue;
+}
+
+.box3 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: lightcoral;
+}
+
+.box4 {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: lightpink;
+}
+
+.paragraphs {
+  margin-top: 20px; /* Added margin for spacing */
+}
+
+.float-paragraph {
+  float: left;
+  width: 100%; /* Changed to 100% for full width */
+  max-width: 1000px;
+  height: 50px;
+  background-color: yellow;
+  margin-right: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center; /* Center text in the floating paragraph */
+}
+
+.clear {
+  clear: left;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px; /* Added margin for spacing */
+  text-align: center; /* Center text in the clear paragraph */
+}

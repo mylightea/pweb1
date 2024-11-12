@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #FFEEDE;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(background.png);
+}
+
+.logo {
+    color: #FFEEDE;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #753E06;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    border-radius: 30px;
+    box-shadow: 0px 6px 13.9px 0px rgba(0, 0, 0, 0.25);
+}
+
+nav ul li{
+    display: flex;
+    gap: 6rem;
+}
+
+nav ul li a {
+    color: #FFEEDE;
+    font-size: 1.2rem;
+}
+
+section {
+    width: 80%;
+    padding: 1rem 3rem;
+    height: 84vh;
+    margin-top: 2rem;
+}
+
+.left-box {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 400px;
+    gap: 2rem;
+    height: 100%;
+    color: #753E06;
+}
+
+.right-box {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.right-box img {
+    height: 90%;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.left-box a{
+    padding: .8rem 2rem;
+    background-color: #753E06;
+    color: #FFEEDE;
+    border-radius: 20px;
+}
+
+.sec-container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.box {
+    width: 26rem;
+    background-color: #753E06;
+    padding: 1rem;
+    color: #FFEEDE;
+    border-radius: 20px;
+    box-shadow: 0px 6px 13.9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.image {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.image1{
+    background-image: url(ayah.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.image2{
+    background-image: url(ibu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.image3{
+    background-image: url(anak1.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.image4{
+    background-image: url(anak2.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.biodata-container {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.biodata {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.biodata h2 {
+    margin-bottom: 0.5rem;
+}
+
+main h1 {
+    text-align: center;
+    color: #753E06;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+main {
+    padding-bottom: 3rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #753E06;
+    width: 100%;
+    color: #FFEEDE;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #FFEEDE;
+    font-size: 3rem;
+}
+
+.socmed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
