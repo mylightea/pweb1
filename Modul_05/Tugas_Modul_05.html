@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto Alumni UNIKU</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center; /* Menempatkan gambar di tengah */
+            align-items: center; /* Menjaga gambar tetap terpusat secara vertikal */
+            max-width: 800px; /* Membatasi lebar galeri */
+            margin: 0 auto; /* Memusatkan galeri di halaman */
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            opacity: 0; /* Mulai dengan gambar tidak terlihat */
+            transition: opacity 0.5s, transform 0.3s; /* Efek transisi */
+            border-radius: 10px; /* Sudut melengkung */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+        }
+        .gallery img.loaded {
+            opacity: 1; /* Gambar terlihat setelah dimuat */
+        }
+        .gallery img:hover {
+            transform: scale(1.05); /* Efek zoom saat hover */
+        }
+        .modal {
+            display: none; /* Modal tidak terlihat secara default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* Pastikan modal di atas elemen lain */
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px; /* Sudut melengkung pada gambar modal */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Bayangan pada gambar modal */
+        }
+        .close {
+            position: absolute;
+            top: 20px; /* Jarak dari atas */
+            right: 20px; /* Jarak dari sisi kanan */
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .close:hover {
+            color: #ff4d4d; /* Warna saat hover */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Galeri Foto Alumni UNIKU</h1>
+<div class="gallery">
+    <img src="Anya.jpg" alt="Alumni 1">
+    <img src="Chandra.jpg" alt="Alumni 2">
+    <img src="Manggala.jpg" alt="Alumni 3">
+    <img src="Narendra.jpg" alt="Alumni 4">
+    <img src="Sagara.jpg" alt="Alumni 5">
+</div>
+
+<div class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Tugas_Modul_05.js"></script>
+</body>
